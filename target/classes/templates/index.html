@@ -62,7 +62,12 @@
                     <td th:text="${estados.sigla}"></td>
                     <td th:text="${estados.descricao}"></td>
                     <a href=""><td>Editar</td>></a>
-                    <a href=""><td>Deletar</td>></a>
+                    <td>
+                        <a th:href="@{/estados/ui/delete/{id}(id=${estados.id})}">
+                            Deletar
+                        </a>
+                    </td>
+
                 </tr>
                 </tbody>
             </table>
